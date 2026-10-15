@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ETDOX | Zero-Trust Access Platform</title>
+  <meta name="description"
+        content="Identity-centric access control, policy-based decisions and auditable security for enterprise applications.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background: radial-gradient(ellipse at 15% 0%, #dbeafe 0, transparent 38%), #f8fbff;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(37,99,235,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37,99,235,.055) 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, .88);
+      border: 1px solid #dbeafe;
+      box-shadow: 0 12px 32px rgba(30, 64, 175, .07);
+    }
+    a, button, input, textarea { transition: all .2s ease; }
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid #22d3ee; outline-offset: 3px; }
+    .hero-photo { min-height: 390px; background: #dbeafe url("hero-zero-trust.png") center / cover no-repeat; border: 1px solid rgba(147,197,253,.65); box-shadow: 0 24px 80px rgba(30,64,175,.16); }
+    .hero-photo::after { content: ""; display: block; min-height: 390px; background: linear-gradient(90deg, rgba(248,251,255,.15), transparent 45%, rgba(248,251,255,.05)); }
+  </style>
+</head>
+
+<body class="text-slate-900 min-h-screen">
+
+  <!-- Navigation -->
+  <header class="border-b border-blue-100 bg-white/75 backdrop-blur-sm">
+    <nav class="max-w-7xl mx-auto px-6 py-5
+                flex justify-between items-center">
+
+      <a href="index.html"
+         class="text-xl font-bold tracking-wide">
+        ETDOX<span class="text-sky-700">.</span>
+        <span class="text-slate-600 font-normal text-sm ml-1">
+          Zero-Trust
+        </span>
+      </a>
+
+      <div class="hidden md:flex gap-7 text-sm text-slate-600">
+        <a href="#platform" class="hover:text-sky-700">Platform</a>
+        <a href="#architecture" class="hover:text-sky-700">Architecture</a>
+        <a href="#security" class="hover:text-sky-700">Security</a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="login.html"
+           class="text-sm hover:text-sky-700">
+          Login
+        </a>
+
+        <a href="request.html"
+           class="bg-sky-600 text-white
+                  font-semibold text-sm px-4 py-2
+                  rounded-lg hover:bg-sky-700">
+          Request Access
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="platform"
+             class="grid-bg border-b border-blue-100">
+
+      <div class="max-w-7xl mx-auto px-6 py-20
+                  md:py-28 grid md:grid-cols-2
+                  gap-14 items-center">
+
+        <div>
+          <p class="text-sky-700 text-sm font-semibold
+                    tracking-widest uppercase">
+            Identity · Policy · Evidence
+          </p>
+
+          <h1 class="text-4xl md:text-6xl
+                     font-bold leading-tight mt-5">
+            Every request
+            <span class="text-sky-700">verified.</span>
+            Every decision
+            <span class="text-sky-700">accountable.</span>
+          </h1>
+
+          <p class="mt-6 text-slate-600 text-lg
+                    leading-8 max-w-xl">
+            A Zero Trust access platform for controlling
+            access to enterprise applications through
+            identity verification, explicit policies
+            and auditable access decisions.
+          </p>
+
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a href="login.html"
+               class="bg-sky-600 text-white
+                      font-semibold px-6 py-3 rounded-lg
+                      hover:bg-sky-700">
+              Sign in securely →
+            </a>
+
+            <a href="#architecture"
+               class="border border-slate-300 text-slate-700 px-6 py-3
+                      rounded-lg hover:border-sky-600 hover:text-sky-700">
+              Explore architecture
+            </a>
+          </div>
+
+          <p class="mt-6 text-xs text-slate-500">
+            Designed around least privilege and
+            deny-by-default access decisions.
+          </p>
+        </div>
+
+        <div class="hero-photo rounded-2xl overflow-hidden" role="img" aria-label="Zero-trust security dashboard in a modern operations room"></div>
+      </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section id="security"
+             class="max-w-7xl mx-auto px-6 py-20">
+
+      <div class="max-w-2xl">
+        <p class="text-sky-700 text-sm uppercase
+                  tracking-widest font-semibold">
+          Security capabilities
+        </p>
+
+        <h2 class="text-3xl md:text-4xl
+                   font-bold mt-4">
+          Trust is evaluated, not assumed.
+        </h2>
+
+        <p class="text-slate-600 mt-4 leading-7">
+          Centralize identity, apply consistent access
+          policies and preserve evidence for investigation
+          and compliance reviews.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4
+                  gap-5 mt-10">
+
+        <article class="panel rounded-xl p-5">
+          <div class="text-sky-700 text-2xl">◎</div>
+          <h3 class="font-semibold mt-4">
+            Single Sign-On
+          </h3>
+          <p class="text-sm text-slate-600 mt-3 leading-6">
+            One sign-in for approved applications,
+            with MFA enforced by policy.
+          </p>
+        </article>
+
+        <article class="panel rounded-xl p-5">
+          <div class="text-sky-700 text-2xl">◇</div>
+          <h3 class="font-semibold mt-4">
+            Access Policies
+          </h3>
+          <p class="text-sm text-slate-600 mt-3 leading-6">
+            Default-deny decisions based on roles
+            and relevant attributes.
+          </p>
+        </article>
+
+        <article class="panel rounded-xl p-5">
+          <div class="text-sky-700 text-2xl">↻</div>
+          <h3 class="font-semibold mt-4">
+            Continuous Verification
+          </h3>
+          <p class="text-sm text-slate-600 mt-3 leading-6">
+            Re-evaluate access when relevant
+            identity, device or risk signals change.
+          </p>
+        </article>
+
+        <article class="panel rounded-xl p-5">
+          <div class="text-sky-700 text-2xl">⌁</div>
+          <h3 class="font-semibold mt-4">
+            Audit Evidence
+          </h3>
+          <p class="text-sm text-slate-600 mt-3 leading-6">
+            Record access decisions and administrative
+            actions for investigation and review.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section id="architecture"
+             class="border-y border-blue-100 bg-blue-50/70">
+
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <p class="text-sky-700 text-sm uppercase
+                  tracking-widest font-semibold">
+          Architecture
+        </p>
+
+        <h2 class="text-3xl font-bold mt-4">
+          One access decision. A traceable outcome.
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-5 mt-8">
+
+          <div class="border-l-2 border-sky-300 pl-5 py-2">
+            <p class="text-xs text-slate-500">IDENTITY</p>
+            <h3 class="font-semibold mt-2">Keycloak / OIDC</h3>
+            <p class="text-sm text-slate-600 mt-2">
+              Identity and authentication integration.
+            </p>
+          </div>
+
+          <div class="border-l-2 border-sky-300 pl-5 py-2">
+            <p class="text-xs text-slate-500">POLICY</p>
+            <h3 class="font-semibold mt-2">Open Policy Agent</h3>
+            <p class="text-sm text-slate-600 mt-2">
+              Centralized policy evaluation.
+            </p>
+          </div>
+
+          <div class="border-l-2 border-sky-300 pl-5 py-2">
+            <p class="text-xs text-slate-500">ENFORCEMENT</p>
+            <h3 class="font-semibold mt-2">Envoy / Protected app</h3>
+            <p class="text-sm text-slate-600 mt-2">
+              Enforcement point for authorized requests.
+            </p>
+          </div>
+
+        </div>
+
+        <p class="text-xs text-slate-500 mt-8">
+          Proposed reference architecture. Integrations
+          depend on the implementation phase.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="max-w-7xl mx-auto px-6 py-7
+                 flex flex-col sm:flex-row
+                 justify-between gap-3 text-sm
+                 text-slate-500">
+    <p>© 2026 ETDOX Zero-Trust</p>
+    <p>Identity · Least Privilege · Auditability</p>
+  </footer>
+
+</body>
+</html>

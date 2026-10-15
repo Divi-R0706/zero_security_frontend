@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ETDOX - Enterprise Zero Trust Identity and Access Security Platform">
+    <title>ETDOX | Zero Trust Security</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            450: '#10a879',
+                            550: '#07966b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- Navbar -->
+    <header class="w-full border-b border-gray-100 bg-white">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                         viewBox="0 0 24 24">
+                        <path stroke-width="2.5" stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 3L4.5 6v5.5c0 4.5 3.2 7.8 7.5 9.5 4.3-1.7 7.5-5 7.5-9.5V6L12 3z"/>
+                        <path stroke-width="2.5" stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M9 12l2 2 4-4"/>
+                    </svg>
+                </div>
+
+                <span class="text-2xl font-bold tracking-tight text-gray-900">
+                    ETD<span class="text-emerald-600">OX</span>
+                </span>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="flex items-center gap-4 sm:gap-7">
+                <a href="login.html"
+                   class="text-sm font-semibold text-gray-600 hover:text-emerald-600 transition">
+                    Login
+                </a>
+
+                <a href="register.html"
+                   class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition shadow-sm">
+                    Register
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20 lg:py-28">
+
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                    <!-- Hero Content -->
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-100 mb-7">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            <span class="text-xs font-semibold tracking-wide text-emerald-700 uppercase">
+                                Enterprise Zero Trust Security
+                            </span>
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight">
+                            Trust Must Be
+                            <span class="text-emerald-600">Verified.</span>
+                        </h1>
+
+                        <p class="mt-6 text-lg text-gray-500 leading-relaxed max-w-xl">
+                            Secure every identity, validate every device, and
+                            control every access request. ETDOX brings Zero Trust
+                            security into one intelligent identity and access
+                            management platform.
+                        </p>
+
+                        <div class="mt-9 flex flex-wrap gap-4">
+                            <a href="register.html"
+                               class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-7 py-3.5 rounded-lg shadow-md shadow-emerald-100 transition">
+                                Get Started
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                     viewBox="0 0 24 24">
+                                    <path stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6"/>
+                                </svg>
+                            </a>
+
+                            <a href="login.html"
+                               class="inline-flex items-center justify-center border border-gray-200 hover:border-emerald-500 hover:text-emerald-600 text-gray-700 font-semibold px-7 py-3.5 rounded-lg transition">
+                                Login to Dashboard
+                            </a>
+                        </div>
+
+                        <div class="mt-10 flex items-center gap-3 text-sm text-gray-400">
+                            <svg class="w-5 h-5 text-emerald-600" fill="none"
+                                 stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M12 3L4.5 6v5.5c0 4.5 3.2 7.8 7.5 9.5 4.3-1.7 7.5-5 7.5-9.5V6L12 3z"/>
+                            </svg>
+                            <span>Security-first access. Continuous verification.</span>
+                        </div>
+                    </div>
+
+
+                    <!-- Access Verification Illustration -->
+                    <div class="relative flex justify-center items-center">
+
+                        <!-- Background Decoration -->
+                        <div class="absolute w-80 h-80 bg-emerald-100 rounded-full blur-3xl opacity-40"></div>
+
+                        <div class="relative w-full max-w-md bg-white border border-gray-100 rounded-2xl shadow-xl shadow-gray-200/60 p-7">
+
+                            <!-- Card Header -->
+                            <div class="flex items-center justify-between mb-8">
+                                <div>
+                                    <p class="text-sm text-gray-400 font-medium">ETDOX SECURITY</p>
+                                    <h3 class="text-lg font-bold text-gray-900 mt-1">
+                                        Access Verification
+                                    </h3>
+                                </div>
+
+                                <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-emerald-600" fill="none"
+                                         stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              d="M12 3L4.5 6v5.5c0 4.5 3.2 7.8 7.5 9.5 4.3-1.7 7.5-5 7.5-9.5V6L12 3z"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Central Shield Illustration -->
+                            <div class="flex justify-center py-5">
+                                <div class="w-32 h-32 rounded-full bg-emerald-50 border-8 border-emerald-100 flex items-center justify-center">
+                                    <svg class="w-20 h-20 text-emerald-600"
+                                         fill="none" stroke="currentColor"
+                                         viewBox="0 0 24 24">
+                                        <path stroke-width="1.5" stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              d="M12 2.8L4.5 6v5.2c0 4.6 3.1 8.1 7.5 10 4.4-1.9 7.5-5.4 7.5-10V6L12 2.8z"/>
+                                        <path stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              d="M8.5 12l2.3 2.3 4.8-5"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Verification Status -->
+                            <div class="text-center mb-7">
+                                <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold">
+                                    <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                                    Identity Verified
+                                </div>
+                                <p class="text-sm text-gray-400 mt-3">
+                                    Security checks completed successfully
+                                </p>
+                            </div>
+
+                            <!-- Verification Steps -->
+                            <div class="space-y-3">
+
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-9 h-9 bg-white rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-gray-500" fill="none"
+                                                 stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-width="1.8" stroke-linecap="round"
+                                                      stroke-linejoin="round"
+                                                      d="M16 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2m6-10a4 4 0 100-8 4 4 0 000 8zm8-1v6m3-3h-6"/>
+                                            </svg>
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-700">
+                                            Identity Check
+                                        </span>
+                                    </div>
+                                    <span class="text-xs font-semibold text-emerald-600">
+                                        Verified
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-9 h-9 bg-white rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-gray-500" fill="none"
+                                                 stroke="currentColor" viewBox="0 0 24 24">
+                                                <rect x="5" y="3" width="14" height="18"
+                                                      rx="2" stroke-width="1.8"/>
+                                                <path stroke-width="1.8" stroke-linecap="round"
+                                                      d="M9 17h6"/>
+                                            </svg>
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-700">
+                                            Device Context
+                                        </span>
+                                    </div>
+                                    <span class="text-xs font-semibold text-emerald-600">
+                                        Trusted
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-9 h-9 bg-white rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-gray-500" fill="none"
+                                                 stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-width="1.8" stroke-linecap="round"
+                                                      stroke-linejoin="round"
+                                                      d="M9 12l2 2 4-4m5-5H4v14h16V5z"/>
+                                            </svg>
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-700">
+                                            Access Policy
+                                        </span>
+                                    </div>
+                                    <span class="text-xs font-semibold text-emerald-600">
+                                        Allowed
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="mt-5 pt-4 border-t border-gray-100 flex justify-between text-xs text-gray-400">
+                                <span>Powered by ETDOX</span>
+                                <span>Zero Trust Architecture</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Features Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-sm font-semibold text-emerald-600 uppercase tracking-widest">
+                        Core Capabilities
+                    </span>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-3">
+                        Security at Every Layer
+                    </h2>
+
+                    <p class="text-gray-500 mt-4 leading-relaxed">
+                        A smarter approach to enterprise security, built around
+                        continuous verification and controlled access.
+                    </p>
+                </div>
+
+
+                <div class="grid md:grid-cols-3 gap-7">
+
+                    <!-- Feature 1: Identity -->
+                    <div class="group p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:border-emerald-200 hover:shadow-lg transition duration-300">
+
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none"
+                                 stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-width="1.8" stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M16 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2m6-10a4 4 0 100-8 4 4 0 000 8zm8-1v6m3-3h-6"/>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            Identity
+                        </h3>
+
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Verify every user before granting access. Establish
+                            trusted identities through secure authentication
+                            and identity validation.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Feature 2: Device Context -->
+                    <div class="group p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:border-emerald-200 hover:shadow-lg transition duration-300">
+
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none"
+                                 stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="5" y="3" width="14" height="18"
+                                      rx="2" stroke-width="1.8"/>
+                                <path stroke-width="1.8" stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M9 17h6M9 7h6"/>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            Device Context
+                        </h3>
+
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Evaluate device security and trust context before
+                            allowing connections to enterprise applications
+                            and sensitive resources.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Feature 3: Access Policies -->
+                    <div class="group p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:border-emerald-200 hover:shadow-lg transition duration-300">
+
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-emerald-600" fill="none"
+                                 stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-width="1.8" stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M9 12l2 2 4-4m5-5H4v14h16V5z"/>
+                                <path stroke-width="1.8" stroke-linecap="round"
+                                      d="M8 8h8"/>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            Access Policies
+                        </h3>
+
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Enforce least-privilege access with policy-based
+                            decisions. Grant access only when security
+                            requirements are satisfied.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Call to Action -->
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+
+                <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <svg class="w-7 h-7 text-emerald-600" fill="none"
+                         stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 3L4.5 6v5.5c0 4.5 3.2 7.8 7.5 9.5 4.3-1.7 7.5-5 7.5-9.5V6L12 3z"/>
+                    </svg>
+                </div>
+
+                <h2 class="text-3xl font-bold text-gray-900">
+                    Secure Access Starts Here.
+                </h2>
+
+                <p class="mt-4 text-gray-500 max-w-xl mx-auto">
+                    Move beyond traditional security. Build a safer digital
+                    environment with ETDOX Zero Trust Security.
+                </p>
+
+                <a href="register.html"
+                   class="inline-flex items-center gap-2 mt-7 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-7 py-3 rounded-lg transition">
+                    Create Your Account
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                         viewBox="0 0 24 24">
+                        <path stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6"/>
+                    </svg>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-7">
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none"
+                             stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M12 3L4.5 6v5.5c0 4.5 3.2 7.8 7.5 9.5 4.3-1.7 7.5-5 7.5-9.5V6L12 3z"/>
+                            <path stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="font-bold text-gray-900">
+                        ETD<span class="text-emerald-600">OX</span>
+                    </span>
+                </a>
+
+                <p class="text-sm text-gray-400 text-center">
+                    © 2026 ETDOX. All rights reserved.
+                </p>
+
+                <div class="flex items-center gap-5 text-sm text-gray-500">
+                    <a href="login.html" class="hover:text-emerald-600 transition">
+                        Login
+                    </a>
+                    <a href="register.html" class="hover:text-emerald-600 transition">
+                        Register
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

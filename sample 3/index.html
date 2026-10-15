@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETDOX | Zero Trust Security</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            background: #080f1c;
+            font-family: Arial, sans-serif;
+        }
+        .glow {
+            box-shadow: 0 0 50px rgba(34, 211, 238, 0.08);
+        }
+    </style>
+</head>
+
+<body class="text-white min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex
+                justify-between items-center">
+
+        <a href="index.html"
+           class="text-2xl font-bold tracking-wide">
+            ETD<span class="text-cyan-400">OX</span>
+        </a>
+
+        <div class="flex gap-3 items-center">
+            <a href="login.html"
+               class="px-4 py-2 text-gray-300
+                      hover:text-cyan-400 transition">
+                Login
+            </a>
+
+            <a href="register.html"
+               class="px-5 py-2 rounded-lg bg-cyan-400
+                      text-gray-950 font-semibold
+                      hover:bg-cyan-300 transition">
+                Register
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="max-w-7xl mx-auto px-6 py-20
+                 md:py-28 grid md:grid-cols-2
+                 gap-14 items-center">
+
+        <section>
+            <div class="inline-flex items-center gap-2
+                        border border-cyan-900 rounded-full
+                        px-4 py-2 text-sm text-cyan-300 mb-8">
+                <span class="w-2 h-2 bg-cyan-400
+                             rounded-full"></span>
+                Identity-Centric Security
+            </div>
+
+            <h1 class="text-4xl md:text-6xl
+                       font-bold leading-tight">
+                Never Trust.<br>
+                <span class="text-cyan-400">
+                    Always Verify.
+                </span>
+            </h1>
+
+            <p class="mt-6 text-gray-400 text-lg
+                      leading-8 max-w-xl">
+                A Zero Trust security platform designed
+                to strengthen identity verification,
+                control access, and protect digital
+                resources through continuous trust evaluation.
+            </p>
+
+            <div class="flex flex-wrap gap-4 mt-9">
+                <a href="login.html"
+                   class="px-7 py-3 rounded-lg
+                          bg-cyan-400 text-gray-950
+                          font-semibold hover:bg-cyan-300
+                          transition">
+                    Get Started →
+                </a>
+
+                <a href="register.html"
+                   class="px-7 py-3 rounded-lg
+                          border border-gray-600
+                          hover:border-cyan-400
+                          transition">
+                    Create Account
+                </a>
+            </div>
+
+            <p class="mt-8 text-sm text-gray-500">
+                Identity first. Least privilege. Verify every request.
+            </p>
+        </section>
+
+        <!-- Security Illustration -->
+        <section class="glow border border-gray-800
+                        bg-gray-900/70 rounded-2xl
+                        p-8 md:p-10">
+
+            <div class="flex justify-between items-center
+                        border-b border-gray-800 pb-5">
+                <h2 class="text-lg font-semibold">
+                    Security Overview
+                </h2>
+            </div>
+
+            <div class="text-center py-10">
+                <div class="mx-auto w-24 h-24
+                            rounded-full border-2
+                            border-cyan-400/50
+                            bg-cyan-400/10
+                            flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="48" height="48"
+                         viewBox="0 0 24 24"
+                         fill="none" stroke="#22d3ee"
+                         stroke-width="1.5"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                </div>
+
+                <h3 class="mt-5 text-xl font-semibold">
+                    Zero Trust Architecture
+                </h3>
+                <p class="mt-2 text-gray-400 text-sm">
+                    Verify identity before granting access
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="flex items-center justify-between
+                            bg-gray-800/70 p-4 rounded-xl">
+                    <span class="text-gray-300">
+                        Identity Verification
+                    </span>
+                    <span class="text-cyan-400 text-sm">
+                        ● Essential
+                    </span>
+                </div>
+
+                <div class="flex items-center justify-between
+                            bg-gray-800/70 p-4 rounded-xl">
+                    <span class="text-gray-300">
+                        Least Privilege Access
+                    </span>
+                    <span class="text-cyan-400 text-sm">
+                        ● Essential
+                    </span>
+                </div>
+
+                <div class="flex items-center justify-between
+                            bg-gray-800/70 p-4 rounded-xl">
+                    <span class="text-gray-300">
+                        Continuous Verification
+                    </span>
+                    <span class="text-cyan-400 text-sm">
+                        ● Principle
+                    </span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 mt-8">
+        <div class="max-w-7xl mx-auto px-6 py-6
+                    flex flex-col sm:flex-row
+                    justify-between gap-3 text-sm
+                    text-gray-500">
+            <p>© 2026 ETDOX Zero Trust Platform</p>
+            <p>Secure Access. Trusted Identity.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
